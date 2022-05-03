@@ -32,7 +32,7 @@ int fac(int n) { return n > 1 ? n * fac(n - 1) : 1; } //function to get factoria
 
 int main()
 try {
-    // code
+    
     cout << "Binary array\n";
     f(ga, 10);
 
