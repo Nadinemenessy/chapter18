@@ -8,8 +8,8 @@ void f(int ai[], int n)
 {
     //ai = array instance
     //la = local array
-    int la[10] = { };
-    for (int i = 0; i < n; ++i) la[i] = ai[i]; //assign la array to all elements of ai array - ai array is a parameter
+    int la[10] = { };// define local array
+    for (int i = 0; i < n; ++i) la[i] = ai[i]; //assign la array to all elements of ai array - ai array is a parameter(printing values)
 
     cout << "Local copy\n";
     for (const auto& a : la)
@@ -18,9 +18,9 @@ void f(int ai[], int n)
 
     //allocated n spaces in memory to create array p - a pointer can be dealt with as an array too
     int* p = new int[n]; //new int[n] = allocated number of bytes n in memory
-    for (int i = 0; i < n; ++i) p[i] = ai[i];
+    for (int i = 0; i < n; ++i) p[i] = ai[i];// copy argumented arr
 
-    cout << "Pointer to free store\n";
+    cout << "Pointer to free store\n";//printing
     for (int i = 0; i < n; ++i)
         cout << p[i] << ' ';
     cout << '\n';
