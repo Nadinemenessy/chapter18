@@ -1,4 +1,4 @@
-#include "std_lib_facilities.h"
+#include "std_lib_facilities.h
 
 // 1 Define a global int array
 int ga[10] = { 1, 2, 4, 8, 16, 32, 64, 128, 256, 512 };
